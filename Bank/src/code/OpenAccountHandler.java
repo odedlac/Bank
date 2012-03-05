@@ -7,13 +7,13 @@ package code;
  * @author oded
  *
  */
-public class OpenAccountRequest {
+public class OpenAccountHandler {
 
 	private Display display;
 	private BackgroundCheck backGroundCheck;
 	private Accounts accounts;
 
-	public OpenAccountRequest(Accounts accounts,
+	public OpenAccountHandler(Accounts accounts,
 			BackgroundCheck backGroundCheck, Display display) {
 		this.accounts = accounts;
 		this.backGroundCheck = backGroundCheck;

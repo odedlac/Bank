@@ -2,11 +2,11 @@ package code;
 
 public class Teller {
 
-	private OpenAccountRequest openAccountRequest;
-	private WithdrawMoneyRequest withdrawMoneyRequest;
+	private OpenAccountHandler openAccountRequest;
+	private WithdrawMoneyHandler withdrawMoneyRequest;
 
-	public Teller(OpenAccountRequest openAccountRequest,
-			WithdrawMoneyRequest withdrawMoneyRequest) {
+	public Teller(OpenAccountHandler openAccountRequest,
+			WithdrawMoneyHandler withdrawMoneyRequest) {
 		this.openAccountRequest = openAccountRequest;
 		this.withdrawMoneyRequest = withdrawMoneyRequest;
 	}

@@ -8,13 +8,13 @@ package code;
  * @author oded
  *
  */
-public class WithdrawMoneyRequest {
+public class WithdrawMoneyHandler {
 
 	private Accounts accounts;
 	private Money money;
 	private Display display;
 
-	public WithdrawMoneyRequest(Accounts accounts, Money money, Display display) {
+	public WithdrawMoneyHandler(Accounts accounts, Money money, Display display) {
 		this.accounts = accounts;
 		this.money = money;
 		this.display = display;

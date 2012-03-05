@@ -12,9 +12,9 @@ import code.Accounts;
 import code.BackgroundCheck;
 import code.Display;
 import code.Money;
-import code.OpenAccountRequest;
+import code.OpenAccountHandler;
 import code.Teller;
-import code.WithdrawMoneyRequest;
+import code.WithdrawMoneyHandler;
 
 /**
  * @author oded
@@ -34,8 +34,8 @@ public class TellerTest {
 		Display display = new Display();
 		BackgroundCheck backGroundCheck  = new BackgroundCheck();
 
-		WithdrawMoneyRequest withdrawMoneyRequest = new WithdrawMoneyRequest(accounts,money,display);
-		OpenAccountRequest openAccountRequest = new OpenAccountRequest(accounts,backGroundCheck,display);		
+		WithdrawMoneyHandler withdrawMoneyRequest = new WithdrawMoneyHandler(accounts,money,display);
+		OpenAccountHandler openAccountRequest = new OpenAccountHandler(accounts,backGroundCheck,display);		
 		
 		classUnderTest = new Teller(openAccountRequest,withdrawMoneyRequest);
 		
