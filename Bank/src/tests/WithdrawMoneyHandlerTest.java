@@ -25,7 +25,7 @@ public class WithdrawMoneyHandlerTest {
 	 * @throws java.lang.Exception
 	 */
 	@Before
-	public void setUpBeforeClass() throws Exception {
+	public void setUp() throws Exception {
 		Accounts accounts = new Accounts();
 		accounts.deposit(accounts.openNewAccount(), 100);
 		accounts.deposit(accounts.openNewAccount(), 200);

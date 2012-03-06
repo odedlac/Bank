@@ -25,7 +25,7 @@ public class TellerTest {
 	private Teller classUnderTest;
 	
 	@Before
-	public void setUpBeforeClass(){
+	public void setUp()  throws Exception {
 		Accounts accounts = new Accounts();
 		accounts.deposit(accounts.openNewAccount(), 100);
 		accounts.deposit(accounts.openNewAccount(), 200);

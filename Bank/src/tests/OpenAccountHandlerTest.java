@@ -24,7 +24,7 @@ public class OpenAccountHandlerTest {
 	 * @throws java.lang.Exception
 	 */
 	@Before
-	public void setUpBeforeClass() throws Exception {
+	public void setUp() throws Exception {
 		Accounts accounts = new Accounts();
 		BackgroundCheck backGroundCheck  = new BackgroundCheck();
 		Display display = new Display();

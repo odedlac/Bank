@@ -19,7 +19,7 @@ public class AccountsTest {
 	 Accounts accounts;
 	
 	@Before
-	public  void setUpBeforeClass(){
+	public  void setUp() throws Exception {
 		accounts = new Accounts();
 		accounts.openNewAccount();
 		accounts.openNewAccount();
